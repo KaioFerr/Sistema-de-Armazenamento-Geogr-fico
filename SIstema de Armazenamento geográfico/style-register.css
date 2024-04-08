@@ -1,0 +1,384 @@
+:root{
+    --menu-color: #D9D9D9;
+    --background-color: #E7E7E7;
+    --primary-color: #04C9F4;
+    --primary-color-hover: #00a5ca;
+    --secundary-color: #F40404;
+    --secundary-color-hover: #e30505;
+    --third-color: #FFFFFF;
+    --third-color-hover: #dddddd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "aside_container header_container header_container"
+    "aside_container main_container main_container"
+    "aside_container footer_container footer_container";
+    grid-template-columns: 27.4vh auto auto ;
+    grid-template-rows: 8vh 100vh 5vh;
+    
+
+    
+}
+
+header {
+    grid-area: header_container;
+    background-color: var(--primary-color);
+    text-align: center;
+    align-content: center;
+    font-size: 12px;
+    border-bottom: solid black 1px;
+}
+
+.aside__container {
+    
+    background-color: var(--menu-color);
+    grid-area: aside_container;
+    padding: 1px 0px;
+    border-right: solid black 1px;
+}
+
+
+main{
+    grid-area: main_container;
+    background-color: var(--third-color);
+    
+}
+
+footer {
+    grid-area: footer_container;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+    border-top: solid black 1px;
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 4px;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+
+    
+}
+
+input {
+    width: 330px;
+    height: 46px;
+    padding-left: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+button{
+    width: 160px;
+    height: 24px;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    border: none;
+    border-radius: 8px;
+}
+
+li{
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    height: 40px;
+    align-content: center;
+}
+
+li:hover {
+    color: black;
+}
+
+a {
+    text-decoration: none   ;
+}
+
+#select {
+    background-color: var(--menu-color);
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    color: var(--third-color);
+}
+
+#select:hover {
+    color: var(--primary-color-hover);
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px;
+}
+
+.register__container {
+    background-color: var(--menu-color);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    width: 640px;
+}
+
+.info01__container {
+    display: flex;
+    gap: 8px;
+}
+
+.button__container {
+    display: flex;
+    gap: 8px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Página City*/
+#name {
+    width: 624px;
+}
+
+#state {
+    width: 348px;
+}
+
+#cep {
+    width: 248px;
+}
+
+#region {
+    width: 624px;
+}
+
+/*Página Estado*/
+#contry_name {
+    width: 348px;
+}
+
+#sigla {
+    width: 248px;
+}
+
+/*Página País*/
+#name {
+    width: 624px;
+}
+
+/*Página do usuário*/
+#email {
+    width: 624px;
+}
+
+#password {
+    width: 624px;
+}
+
+
+
+#search {
+    background-color: var(--primary-color);
+}
+
+#search:hover{
+    background-color: var(--primary-color-hover);
+}
+
+#delete {
+    background-color: var(--secundary-color);
+}
+
+#delete:hover {
+    background-color: var(--secundary-color-hover);
+}
+
+#cancel {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border: solid black 1px;
+}
+
+#cancel:hover {
+    background-color: var(--third-color-hover);
+}
+
+#save {
+    background-color: var(--primary-color);
+}
+
+#save:hover{
+    background-color: var(--primary-color-hover);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    body{
+        display: grid;
+        grid-template-areas: 
+        "aside_container header_container header_container"
+        "aside_container main_container main_container"
+        "aside_container footer_container footer_container";
+        grid-template-columns: 16vh auto auto ;
+        grid-template-rows: 8vh 86.9vh 5vh;
+        
+    
+        
+    }
+    
+    button{
+        width: 124px;
+        height: 24px;
+        background-color: var(--primary-color);
+        color: var(--third-color);
+        border: none;
+        border-radius: 8px;
+    }
+    
+    .register__container {
+        background-color: var(--menu-color);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+        width: 500px;
+    }
+    
+    /* Página City*/
+    #name {
+        width: 480px;
+    }
+    
+    #state {
+        width: 280px;
+    }
+    
+    #cep {
+        width: 176px;
+    }
+    
+    #region {
+        width: 480px;
+    }
+    
+    /*Página Estado*/
+    #contry_name {
+        width: 280px;
+    }
+    
+    #sigla {
+        width: 176px;
+    }
+    
+    /*Página País*/
+  
+    
+    /*Página do usuário*/
+    #email {
+        width: 480px;
+    }
+    
+    #password {
+        width: 480px;
+    }
+}
+
+@media(max-width:767px) {
+
+    body{
+        display: grid;
+        grid-template-areas: 
+        "aside_container header_container header_container"
+        "aside_container main_container main_container"
+        "aside_container footer_container footer_container";
+        grid-template-columns: 10vh auto auto ;
+        grid-template-rows: 8vh 87vh 5vh;
+        
+    
+        
+    }
+    a {
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+    
+    button{
+        width: 50px;
+        height: 24px;
+        font-size: 10px;
+        background-color: var(--primary-color);
+        color: var(--third-color);
+        border: none;
+        border-radius: 8px;
+    }
+    
+    .register__container {
+        background-color: var(--menu-color);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+        width: 232px;
+    }
+
+    .info01__container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Página City*/
+    #name {
+        width: 216px;
+    }
+    
+    #state {
+        width: 216px;
+    }
+    
+    #cep {
+        width: 216px;
+    }
+    
+    #region {
+        width: 216px;
+    }
+    
+    /*Página Estado*/
+    #contry_name {
+        width: 216px;
+    }
+    
+    #sigla {
+        width: 216px;
+    }
+    
+    /*Página País*/
+  
+    
+    /*Página do usuário*/
+    #email {
+        width: 216px;
+    }
+    
+    #password {
+        width: 216px;
+    }
+    
+}
